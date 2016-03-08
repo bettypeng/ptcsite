@@ -1,0 +1,309 @@
+html, body, .container-fluid
+{
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    background-color: #292929;
+    font-family: Overpass Light;
+
+}
+
+@font-face {
+    font-family: Overpass;
+    src: url(overpass/Overpass_Regular.ttf);
+}
+
+@font-face {
+    font-family: Overpass Light;
+    src: url(overpass/Overpass_Light.ttf);
+}
+
+@font-face {
+    font-family: Overpass Extra Light;
+    src: url(overpass/Overpass_ExtraLight.ttf);
+}
+
+
+.navbar{
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(2) {
+	top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+  	top: 2px;
+}
+
+.navbar-toggle .icon-bar {
+	position: relative;
+	transition: all 500ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+	top: 6px;
+	transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+	background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+	top: -6px;
+	transform: rotate(-45deg);
+}
+
+.navbar-brand{
+	padding: 0;
+	margin: 0;
+}
+
+.nav li{
+	font-family: Overpass Light;
+
+}
+
+#logo{
+	height: 3em;
+	margin: 0;
+	padding: 0;
+}
+
+div .navbar-brand{
+	padding: .2em 0 0 1em;
+		font-family: Overpass Extra Light;
+
+}
+
+#brown{
+	color:#FFFFFF;
+	text-decoration: none;
+	font-size: 0.8em;
+}
+
+#title{
+	color:#FFFFFF;
+	text-decoration: none;
+	font-size: 1.4em;
+}
+
+#home{
+	background-image: url(img/main.png);
+	background-size: cover;
+	height: 100%;
+	color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+}
+
+#home h1{
+	padding-top: 4em;
+	letter-spacing: .15em;
+	font-family: Overpass;
+
+
+}
+
+#home h2{
+	letter-spacing: .15em;
+	font-family: Overpass Extra Light;
+}
+
+.options{
+	margin: 8em;
+}
+
+.options a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#home .options .button{
+	font-size: 1.2em;
+	background-color: #693648;
+	border: 0;
+	padding: 0.5em 0 0.5em 0;
+	letter-spacing: .1em;
+		-webkit-transition: all .5s ease;
+  -moz-transition:    all .5s ease;
+  -o-transition:      all .5s ease;
+}
+
+#home .options .button:hover{
+	background-color: #43232e;
+	-webkit-transition: all .5s ease;
+  -moz-transition:    all .5s ease;
+  -o-transition:      all .5s ease;
+}
+
+.section{
+	margin: 0em;
+	min-height: 100%;
+	padding-top: 4em;
+	padding-left:15%;
+	padding-right:15%;
+	padding-bottom: 5em;
+}
+
+.section h1{
+	padding: 1em;
+	font-family: Overpass;
+	letter-spacing: .1em;
+}
+
+p, h2{
+	margin: 1em 0 1em 0;
+}
+
+#about{
+	background-color: #F5F5E6;
+	color: #693648;
+}
+
+#about p{
+	max-width:45em;
+	margin: auto;
+}
+
+#people{
+	background-color: #403338;
+	color: #FFFFFF;
+}
+
+
+.member-row{
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.member{
+	margin: .5em;
+}
+
+#people{
+	font-family: Overpass Extra Light;
+}
+
+#people .member-pic{
+	max-width: 9em;
+}
+
+#people .principals .member-pic{
+	max-width: 15em;
+}
+
+#people h4{
+	font-family: Overpass Light;
+}
+
+
+figure { 
+  display: block; 
+  position: relative; 
+  overflow: hidden; 
+}
+
+figcaption{ 
+  padding: .5em;
+  position: absolute; 
+  background: rgba(0,0,0,0.75); 
+  color: white; 
+  width: 100%;
+  opacity: 1;
+  bottom: 0; 
+  left: -30%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition:    all 0.5s ease;
+  -o-transition:      all 0.5s ease;
+}
+
+figcaption h3{
+    line-height: 1.5em;
+    margin: 0;
+    font-family: Overpass;
+
+
+}
+/*
+.detail{ 
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition:    all 1s ease;
+  -o-transition:      all 1s ease;
+}*/
+/*
+figure:hover .preview{
+  opacity: 0;
+  left: 0;
+}
+
+figure:hover .detail{
+  opacity: 1;
+  left: 0;
+}*/
+
+.cap-bot .preview{  left: 0; bottom: 0; }
+/*.cap-bot:hover .preview{ left: 0; bottom: -100%;}
+*/
+/*.cap-bot .detail{ left: 0; bottom: -100%;}
+.cap-bot:hover .detail{ bottom: 0; }
+*/
+
+#research{
+	background-color: #F5F5E6;
+	color: #693648;
+}
+
+
+#research .member{
+	position: relative;
+}
+
+#research .member-pic{
+	max-width: 18em;
+}
+
+#research .member p{
+   position: absolute; 
+   left: 0; 
+   bottom: 0;
+   color: white;
+
+}
+
+#research .member span { 
+   color: white; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.7);
+   padding: 1em 4em 1em 4em;
+   margin: 0; 
+}
+
+#sponsors{
+	background-color: #403338;
+	color: #FFFFFF;
+}
+
+#sponsors .member{
+	margin: 3em;
+}
+
+#sponsors .member-pic{
+	max-width: 30em;
+	width: 100%;
+}
+
+#footer{
+	font-family: Overpass Extra Light;
+	height: 4em;
+	color: white;
+	padding: 0 2em 0 2em;
+}
